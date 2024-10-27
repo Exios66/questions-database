@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>API Documentation &mdash; MVT Nexus  documentation</title>
+  <title>Usage Examples &mdash; MVT Nexus  documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=72df7183" />
@@ -21,8 +21,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="API Overview" href="overview.html" />
-    <link rel="prev" title="Data Analysis &amp; Results" href="../analysis/index.html" /> 
+    <link rel="next" title="Additional Resources" href="../resources/index.html" />
+    <link rel="prev" title="API Endpoints" href="endpoints.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -274,7 +274,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#research-implications">Research Implications</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">API Documentation</a><ul>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">API Documentation</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="overview.html">API Overview</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="overview.html#architecture">Architecture</a></li>
 <li class="toctree-l3"><a class="reference internal" href="overview.html#key-components">Key Components</a></li>
@@ -305,27 +305,27 @@
 <li class="toctree-l3"><a class="reference internal" href="endpoints.html#data-formats">Data Formats</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="examples.html">Usage Examples</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="examples.html#python-examples">Python Examples</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="examples.html#retrieving-questions">Retrieving Questions</a></li>
-<li class="toctree-l4"><a class="reference internal" href="examples.html#running-analysis">Running Analysis</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Usage Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#python-examples">Python Examples</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#retrieving-questions">Retrieving Questions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#running-analysis">Running Analysis</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="examples.html#javascript-examples">JavaScript Examples</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="examples.html#fetching-data">Fetching Data</a></li>
-<li class="toctree-l4"><a class="reference internal" href="examples.html#error-handling">Error Handling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#javascript-examples">JavaScript Examples</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#fetching-data">Fetching Data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#error-handling">Error Handling</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#api-overview">API Overview</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#authentication">Authentication</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#api-endpoints">API Endpoints</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#questions-database">Questions Database</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#analysis-tools">Analysis Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#api-overview">API Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#authentication">Authentication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#api-endpoints">API Endpoints</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="index.html#questions-database">Questions Database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#analysis-tools">Analysis Tools</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#usage-examples">Usage Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#usage-examples">Usage Examples</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../resources/index.html">Additional Resources</a><ul>
@@ -349,9 +349,10 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">API Documentation</li>
+          <li class="breadcrumb-item"><a href="index.html">API Documentation</a></li>
+      <li class="breadcrumb-item active">Usage Examples</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/api/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/api/examples.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -359,70 +360,68 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="api-documentation">
-<h1>API Documentation<a class="headerlink" href="#api-documentation" title="Link to this heading"></a></h1>
-<p>This section provides comprehensive documentation for the API.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="overview.html">API Overview</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="overview.html#architecture">Architecture</a></li>
-<li class="toctree-l2"><a class="reference internal" href="overview.html#key-components">Key Components</a></li>
-<li class="toctree-l2"><a class="reference internal" href="overview.html#endpoints">Endpoints</a></li>
-<li class="toctree-l2"><a class="reference internal" href="overview.html#rate-limiting">Rate Limiting</a></li>
-<li class="toctree-l2"><a class="reference internal" href="overview.html#error-handling">Error Handling</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="authentication.html">Authentication</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="authentication.html#security-measures">Security Measures</a></li>
-<li class="toctree-l2"><a class="reference internal" href="authentication.html#getting-started">Getting Started</a></li>
-<li class="toctree-l2"><a class="reference internal" href="authentication.html#authentication-flow">Authentication Flow</a></li>
-<li class="toctree-l2"><a class="reference internal" href="authentication.html#token-management">Token Management</a></li>
-<li class="toctree-l2"><a class="reference internal" href="authentication.html#security-best-practices">Security Best Practices</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="endpoints.html">API Endpoints</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="endpoints.html#questions-api">Questions API</a></li>
-<li class="toctree-l2"><a class="reference internal" href="endpoints.html#analysis-api">Analysis API</a></li>
-<li class="toctree-l2"><a class="reference internal" href="endpoints.html#data-formats">Data Formats</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="examples.html">Usage Examples</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="examples.html#python-examples">Python Examples</a></li>
-<li class="toctree-l2"><a class="reference internal" href="examples.html#javascript-examples">JavaScript Examples</a></li>
-</ul>
-</li>
-</ul>
+  <section id="usage-examples">
+<h1>Usage Examples<a class="headerlink" href="#usage-examples" title="Link to this heading"></a></h1>
+<section id="python-examples">
+<h2>Python Examples<a class="headerlink" href="#python-examples" title="Link to this heading"></a></h2>
+<section id="retrieving-questions">
+<h3>Retrieving Questions<a class="headerlink" href="#retrieving-questions" title="Link to this heading"></a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="k">def</span> <span class="nf">get_questions</span><span class="p">(</span><span class="n">category</span><span class="p">,</span> <span class="n">difficulty</span><span class="p">):</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://api.mvtnexus.com/v1/questions&quot;</span>
+    <span class="n">params</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;category&quot;</span><span class="p">:</span> <span class="n">category</span><span class="p">,</span>
+        <span class="s2">&quot;difficulty&quot;</span><span class="p">:</span> <span class="n">difficulty</span>
+    <span class="p">}</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+</pre></div>
 </div>
-<section id="api-overview">
-<h2>API Overview<a class="headerlink" href="#api-overview" title="Link to this heading"></a></h2>
-<p>General overview of the API functionality and architecture.</p>
 </section>
-<section id="authentication">
-<h2>Authentication<a class="headerlink" href="#authentication" title="Link to this heading"></a></h2>
-<p>Details about API authentication and security measures.</p>
-</section>
-<section id="api-endpoints">
-<h2>API Endpoints<a class="headerlink" href="#api-endpoints" title="Link to this heading"></a></h2>
-<section id="questions-database">
-<h3>Questions Database<a class="headerlink" href="#questions-database" title="Link to this heading"></a></h3>
-<ul class="simple">
-<li><p>GET /questions - Retrieve questions</p></li>
-<li><p>POST /questions - Add new questions</p></li>
-<li><p>PUT /questions/{id} - Update question</p></li>
-<li><p>DELETE /questions/{id} - Delete question</p></li>
-</ul>
-</section>
-<section id="analysis-tools">
-<h3>Analysis Tools<a class="headerlink" href="#analysis-tools" title="Link to this heading"></a></h3>
-<ul class="simple">
-<li><p>GET /analysis - Get analysis results</p></li>
-<li><p>POST /analysis/run - Run new analysis</p></li>
-</ul>
+<section id="running-analysis">
+<h3>Running Analysis<a class="headerlink" href="#running-analysis" title="Link to this heading"></a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">run_analysis</span><span class="p">(</span><span class="n">question_ids</span><span class="p">,</span> <span class="n">analysis_type</span><span class="p">):</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://api.mvtnexus.com/v1/analysis/run&quot;</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;question_ids&quot;</span><span class="p">:</span> <span class="n">question_ids</span><span class="p">,</span>
+        <span class="s2">&quot;analysis_type&quot;</span><span class="p">:</span> <span class="n">analysis_type</span>
+    <span class="p">}</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">data</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+</pre></div>
+</div>
 </section>
 </section>
-<section id="usage-examples">
-<h2>Usage Examples<a class="headerlink" href="#usage-examples" title="Link to this heading"></a></h2>
-<p>Code examples and implementation guidelines.</p>
+<section id="javascript-examples">
+<h2>JavaScript Examples<a class="headerlink" href="#javascript-examples" title="Link to this heading"></a></h2>
+<section id="fetching-data">
+<h3>Fetching Data<a class="headerlink" href="#fetching-data" title="Link to this heading"></a></h3>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="k">async</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">getQuestions</span><span class="p">(</span><span class="nx">category</span><span class="p">,</span><span class="w"> </span><span class="nx">difficulty</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`https://api.mvtnexus.com/v1/questions?category=</span><span class="si">${</span><span class="nx">category</span><span class="si">}</span><span class="sb">&amp;difficulty=</span><span class="si">${</span><span class="nx">difficulty</span><span class="si">}</span><span class="sb">`</span><span class="p">;</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">response</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">fetch</span><span class="p">(</span><span class="nx">url</span><span class="p">);</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="error-handling">
+<h3>Error Handling<a class="headerlink" href="#error-handling" title="Link to this heading"></a></h3>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="k">async</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">handleApiRequest</span><span class="p">(</span><span class="nx">url</span><span class="p">,</span><span class="w"> </span><span class="nx">options</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="nx">response</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">fetch</span><span class="p">(</span><span class="nx">url</span><span class="p">,</span><span class="w"> </span><span class="nx">options</span><span class="p">);</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nx">response</span><span class="p">.</span><span class="nx">ok</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="ne">Error</span><span class="p">(</span><span class="sb">`API Error: </span><span class="si">${</span><span class="nx">response</span><span class="p">.</span><span class="nx">status</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="nx">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">&#39;API Request failed:&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">);</span>
+<span class="w">        </span><span class="k">throw</span><span class="w"> </span><span class="nx">error</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
 </section>
 </section>
 
@@ -430,8 +429,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../analysis/index.html" class="btn btn-neutral float-left" title="Data Analysis &amp; Results" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="overview.html" class="btn btn-neutral float-right" title="API Overview" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="endpoints.html" class="btn btn-neutral float-left" title="API Endpoints" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../resources/index.html" class="btn btn-neutral float-right" title="Additional Resources" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>API Documentation &mdash; MVT Nexus  documentation</title>
+  <title>API Endpoints &mdash; MVT Nexus  documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=72df7183" />
@@ -21,8 +21,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="API Overview" href="overview.html" />
-    <link rel="prev" title="Data Analysis &amp; Results" href="../analysis/index.html" /> 
+    <link rel="next" title="Usage Examples" href="examples.html" />
+    <link rel="prev" title="Authentication" href="authentication.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -274,7 +274,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#research-implications">Research Implications</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">API Documentation</a><ul>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">API Documentation</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="overview.html">API Overview</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="overview.html#architecture">Architecture</a></li>
 <li class="toctree-l3"><a class="reference internal" href="overview.html#key-components">Key Components</a></li>
@@ -291,18 +291,18 @@
 <li class="toctree-l3"><a class="reference internal" href="authentication.html#security-best-practices">Security Best Practices</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="endpoints.html">API Endpoints</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="endpoints.html#questions-api">Questions API</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="endpoints.html#get-questions">GET /questions</a></li>
-<li class="toctree-l4"><a class="reference internal" href="endpoints.html#post-questions">POST /questions</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">API Endpoints</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#questions-api">Questions API</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#get-questions">GET /questions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#post-questions">POST /questions</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="endpoints.html#analysis-api">Analysis API</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="endpoints.html#get-analysis">GET /analysis</a></li>
-<li class="toctree-l4"><a class="reference internal" href="endpoints.html#post-analysis-run">POST /analysis/run</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#analysis-api">Analysis API</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#get-analysis">GET /analysis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#post-analysis-run">POST /analysis/run</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="endpoints.html#data-formats">Data Formats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#data-formats">Data Formats</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="examples.html">Usage Examples</a><ul>
@@ -318,14 +318,14 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#api-overview">API Overview</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#authentication">Authentication</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#api-endpoints">API Endpoints</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#questions-database">Questions Database</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#analysis-tools">Analysis Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#api-overview">API Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#authentication">Authentication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#api-endpoints">API Endpoints</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="index.html#questions-database">Questions Database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#analysis-tools">Analysis Tools</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#usage-examples">Usage Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#usage-examples">Usage Examples</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../resources/index.html">Additional Resources</a><ul>
@@ -349,9 +349,10 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">API Documentation</li>
+          <li class="breadcrumb-item"><a href="index.html">API Documentation</a></li>
+      <li class="breadcrumb-item active">API Endpoints</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/api/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/api/endpoints.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -359,70 +360,47 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="api-documentation">
-<h1>API Documentation<a class="headerlink" href="#api-documentation" title="Link to this heading"></a></h1>
-<p>This section provides comprehensive documentation for the API.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="overview.html">API Overview</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="overview.html#architecture">Architecture</a></li>
-<li class="toctree-l2"><a class="reference internal" href="overview.html#key-components">Key Components</a></li>
-<li class="toctree-l2"><a class="reference internal" href="overview.html#endpoints">Endpoints</a></li>
-<li class="toctree-l2"><a class="reference internal" href="overview.html#rate-limiting">Rate Limiting</a></li>
-<li class="toctree-l2"><a class="reference internal" href="overview.html#error-handling">Error Handling</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="authentication.html">Authentication</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="authentication.html#security-measures">Security Measures</a></li>
-<li class="toctree-l2"><a class="reference internal" href="authentication.html#getting-started">Getting Started</a></li>
-<li class="toctree-l2"><a class="reference internal" href="authentication.html#authentication-flow">Authentication Flow</a></li>
-<li class="toctree-l2"><a class="reference internal" href="authentication.html#token-management">Token Management</a></li>
-<li class="toctree-l2"><a class="reference internal" href="authentication.html#security-best-practices">Security Best Practices</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="endpoints.html">API Endpoints</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="endpoints.html#questions-api">Questions API</a></li>
-<li class="toctree-l2"><a class="reference internal" href="endpoints.html#analysis-api">Analysis API</a></li>
-<li class="toctree-l2"><a class="reference internal" href="endpoints.html#data-formats">Data Formats</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="examples.html">Usage Examples</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="examples.html#python-examples">Python Examples</a></li>
-<li class="toctree-l2"><a class="reference internal" href="examples.html#javascript-examples">JavaScript Examples</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<section id="api-overview">
-<h2>API Overview<a class="headerlink" href="#api-overview" title="Link to this heading"></a></h2>
-<p>General overview of the API functionality and architecture.</p>
+  <section id="api-endpoints">
+<h1>API Endpoints<a class="headerlink" href="#api-endpoints" title="Link to this heading"></a></h1>
+<section id="questions-api">
+<h2>Questions API<a class="headerlink" href="#questions-api" title="Link to this heading"></a></h2>
+<section id="get-questions">
+<h3>GET /questions<a class="headerlink" href="#get-questions" title="Link to this heading"></a></h3>
+<p>Retrieve questions based on criteria.</p>
+<p>Parameters:
+- category (string): Knowledge category
+- difficulty (int): Difficulty level
+- limit (int): Number of questions to return
+- offset (int): Pagination offset</p>
 </section>
-<section id="authentication">
-<h2>Authentication<a class="headerlink" href="#authentication" title="Link to this heading"></a></h2>
-<p>Details about API authentication and security measures.</p>
-</section>
-<section id="api-endpoints">
-<h2>API Endpoints<a class="headerlink" href="#api-endpoints" title="Link to this heading"></a></h2>
-<section id="questions-database">
-<h3>Questions Database<a class="headerlink" href="#questions-database" title="Link to this heading"></a></h3>
-<ul class="simple">
-<li><p>GET /questions - Retrieve questions</p></li>
-<li><p>POST /questions - Add new questions</p></li>
-<li><p>PUT /questions/{id} - Update question</p></li>
-<li><p>DELETE /questions/{id} - Delete question</p></li>
-</ul>
-</section>
-<section id="analysis-tools">
-<h3>Analysis Tools<a class="headerlink" href="#analysis-tools" title="Link to this heading"></a></h3>
-<ul class="simple">
-<li><p>GET /analysis - Get analysis results</p></li>
-<li><p>POST /analysis/run - Run new analysis</p></li>
-</ul>
+<section id="post-questions">
+<h3>POST /questions<a class="headerlink" href="#post-questions" title="Link to this heading"></a></h3>
+<p>Add new questions to the database.</p>
+<p>Required fields:
+- question_text
+- correct_answer
+- category
+- difficulty</p>
 </section>
 </section>
-<section id="usage-examples">
-<h2>Usage Examples<a class="headerlink" href="#usage-examples" title="Link to this heading"></a></h2>
-<p>Code examples and implementation guidelines.</p>
+<section id="analysis-api">
+<h2>Analysis API<a class="headerlink" href="#analysis-api" title="Link to this heading"></a></h2>
+<section id="get-analysis">
+<h3>GET /analysis<a class="headerlink" href="#get-analysis" title="Link to this heading"></a></h3>
+<p>Retrieve analysis results.</p>
+</section>
+<section id="post-analysis-run">
+<h3>POST /analysis/run<a class="headerlink" href="#post-analysis-run" title="Link to this heading"></a></h3>
+<p>Run analysis on specified questions.</p>
+<p>Parameters:
+- analysis_type
+- question_ids
+- parameters</p>
+</section>
+</section>
+<section id="data-formats">
+<h2>Data Formats<a class="headerlink" href="#data-formats" title="Link to this heading"></a></h2>
+<p>All endpoints accept and return JSON data.</p>
 </section>
 </section>
 
@@ -430,8 +408,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../analysis/index.html" class="btn btn-neutral float-left" title="Data Analysis &amp; Results" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="overview.html" class="btn btn-neutral float-right" title="API Overview" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="authentication.html" class="btn btn-neutral float-left" title="Authentication" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="examples.html" class="btn btn-neutral float-right" title="Usage Examples" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
