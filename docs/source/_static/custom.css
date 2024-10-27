@@ -1,0 +1,63 @@
+/* Custom styles for MVT Nexus Documentation */
+
+/* Enhance readability */
+.wy-nav-content {
+    max-width: 900px;
+    padding: 2em;
+}
+
+/* Improve code block styling */
+.highlight {
+    background: #f8f8f8;
+    border-radius: 4px;
+}
+
+/* Better heading hierarchy */
+h1 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.3em;
+}
+
+h2 {
+    color: #34495e;
+    border-bottom: 1px solid #bdc3c7;
+    padding-bottom: 0.2em;
+}
+
+/* Enhance note boxes */
+.note {
+    background: #e8f4f8;
+    border-left: 4px solid #3498db;
+}
+
+/* Improve table styling */
+table.docutils {
+    border: 1px solid #e1e4e5;
+    border-collapse: collapse;
+    margin-bottom: 24px;
+}
+
+table.docutils td, table.docutils th {
+    padding: 8px;
+    border: 1px solid #e1e4e5;
+}
+
+/* Better navigation styling */
+.wy-menu-vertical li.current {
+    background: #e3e8ee;
+}
+
+.wy-menu-vertical li.current > a {
+    color: #2c3e50;
+}
+
+/* Improve search box */
+.wy-side-nav-search {
+    background-color: #2c3e50;
+}
+
+.wy-side-nav-search input[type="text"] {
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
