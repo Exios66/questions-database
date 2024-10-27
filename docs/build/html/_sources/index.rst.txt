@@ -11,6 +11,7 @@ Welcome to MVT Nexus Documentation
    methodology/index
    analysis/index
    api/index
+   resources/index
 
 Overview
 --------
@@ -24,6 +25,7 @@ Quick Links
 * :doc:`methodology/index`
 * :doc:`analysis/index`
 * :doc:`api/index`
+* :doc:`resources/index`
 
 Indices and tables
 ==================

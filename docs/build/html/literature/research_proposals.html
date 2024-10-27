@@ -1,0 +1,369 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research Proposals &mdash; MVT Nexus  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=72df7183" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/dark-mode.js?v=7b8d0bd9"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Research Methodology" href="../methodology/index.html" />
+    <link rel="prev" title="Psychological Disorders Literature" href="psych_disorders.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #2b2b2b" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            MVT Nexus
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../overview.html">Project Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../overview.html#about-mvt-nexus">About MVT Nexus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../overview.html#project-components">Project Components</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../overview.html#question-database">Question Database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../overview.html#literature-repository">Literature Repository</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../overview.html#project-goals">Project Goals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../overview.html#technology-stack">Technology Stack</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../question_database/index.html">Question Database Documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../question_database/structure.html">Database Structure</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../question_database/structure.html#file-organization">File Organization</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../question_database/structure.html#database-schema">Database Schema</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../question_database/structure.html#field-descriptions">Field Descriptions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../question_database/structure.html#id">id</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../question_database/structure.html#question">question</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../question_database/structure.html#answer-fields">answer fields</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../question_database/structure.html#difficulty">difficulty</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../question_database/structure.html#knowledge-category">Knowledge Category</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../question_database/structure.html#topic-focus">Topic Focus</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../question_database/structure.html#data-integrity">Data Integrity</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../question_database/categories.html">Knowledge Categories</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../question_database/categories.html#main-categories">Main Categories</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../question_database/categories.html#astronomy">Astronomy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../question_database/categories.html#geography">Geography</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../question_database/categories.html#literature">Literature</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../question_database/categories.html#mathematics">Mathematics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../question_database/categories.html#science">Science</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../question_database/categories.html#general-knowledge">General Knowledge</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../question_database/categories.html#category-distribution">Category Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../question_database/categories.html#topic-focus-structure">Topic Focus Structure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../question_database/categories.html#usage-guidelines">Usage Guidelines</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../question_database/difficulty_levels.html">Difficulty Levels</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../question_database/difficulty_levels.html#difficulty-scale">Difficulty Scale</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../question_database/difficulty_levels.html#level-0-basic">Level 0 - Basic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../question_database/difficulty_levels.html#level-1-intermediate">Level 1 - Intermediate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../question_database/difficulty_levels.html#level-2-advanced">Level 2 - Advanced</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../question_database/difficulty_levels.html#difficulty-distribution">Difficulty Distribution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../question_database/difficulty_levels.html#application-across-categories">Application Across Categories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../question_database/difficulty_levels.html#usage-in-assessment">Usage in Assessment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../question_database/difficulty_levels.html#implementation-guidelines">Implementation Guidelines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../question_database/difficulty_levels.html#quality-assurance">Quality Assurance</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../question_database/data_format.html">Question Database Format</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../question_database/data_format.html#available-question-files">Available Question Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../question_database/data_format.html#file-format">File Format</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../question_database/index.html#database-statistics">Database Statistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../question_database/index.html#key-features">Key Features</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Literature Resources</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="clinical_psychiatry.html">Clinical Psychiatry Literature</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="clinical_psychiatry.html#core-text-analysis">Core Text Analysis</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="clinical_psychiatry.html#text-overview">Text Overview</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="clinical_psychiatry.html#key-topics">Key Topics</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="clinical_psychiatry.html#diagnostic-framework">1. Diagnostic Framework</a></li>
+<li class="toctree-l4"><a class="reference internal" href="clinical_psychiatry.html#clinical-assessment">2. Clinical Assessment</a></li>
+<li class="toctree-l4"><a class="reference internal" href="clinical_psychiatry.html#treatment-approaches">3. Treatment Approaches</a></li>
+<li class="toctree-l4"><a class="reference internal" href="clinical_psychiatry.html#research-methodology">4. Research Methodology</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="clinical_psychiatry.html#clinical-applications">Clinical Applications</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="clinical_psychiatry.html#assessment-integration">Assessment Integration</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="clinical_psychiatry.html#key-concepts">Key Concepts</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="clinical_psychiatry.html#psychotic-disorders">Psychotic Disorders</a></li>
+<li class="toctree-l4"><a class="reference internal" href="clinical_psychiatry.html#assessment-domains">Assessment Domains</a></li>
+<li class="toctree-l4"><a class="reference internal" href="clinical_psychiatry.html#treatment-planning">Treatment Planning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="clinical_psychiatry.html#research-applications">Research Applications</a></li>
+<li class="toctree-l3"><a class="reference internal" href="clinical_psychiatry.html#practical-guidelines">Practical Guidelines</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="clinical_psychiatry.html#assessment-protocols">Assessment Protocols</a></li>
+<li class="toctree-l4"><a class="reference internal" href="clinical_psychiatry.html#id1">Treatment Approaches</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="clinical_psychiatry.html#research-integration">Research Integration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="clinical_psychiatry.html#future-directions">Future Directions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="clinical_psychiatry.html#research-focus">Research Focus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="clinical_psychiatry.html#implementation-goals">Implementation Goals</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="clinical_psychiatry.html#references-and-citations">References and Citations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="methodology.html">Research Methodology</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="methodology.html#methodological-framework">Methodological Framework</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="methodology.html#research-design">Research Design</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="methodology.html#assessment-framework">Assessment Framework</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="methodology.html#structure">Structure</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="methodology.html#implementation-protocol">Implementation Protocol</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="methodology.html#assessment-process">Assessment Process</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="methodology.html#analysis-framework">Analysis Framework</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="methodology.html#data-analysis">Data Analysis</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="methodology.html#research-applications">Research Applications</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="methodology.html#clinical-use">Clinical Use</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="methodology.html#quality-assurance">Quality Assurance</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="methodology.html#validation-methods">Validation Methods</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="methodology.html#ethical-considerations">Ethical Considerations</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="methodology.html#research-ethics">Research Ethics</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="methodology.html#future-development">Future Development</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="methodology.html#methodology-enhancement">Methodology Enhancement</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="methodology.html#documentation-standards">Documentation Standards</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="methodology.html#protocol-documentation">Protocol Documentation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="methodology.html#integration-with-literature">Integration with Literature</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="methodology.html#literature-application">Literature Application</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="personality_disorders.html">Personality Disorders Literature</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="personality_disorders.html#core-text-analysis">Core Text Analysis</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="personality_disorders.html#textbook-overview">Textbook Overview</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="personality_disorders.html#key-topics-covered">Key Topics Covered</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="personality_disorders.html#theoretical-foundations">1. Theoretical Foundations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="personality_disorders.html#diagnostic-framework">2. Diagnostic Framework</a></li>
+<li class="toctree-l4"><a class="reference internal" href="personality_disorders.html#clinical-assessment">3. Clinical Assessment</a></li>
+<li class="toctree-l4"><a class="reference internal" href="personality_disorders.html#treatment-approaches">4. Treatment Approaches</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="personality_disorders.html#research-applications">Research Applications</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="personality_disorders.html#assessment-integration">Assessment Integration</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="personality_disorders.html#key-concepts">Key Concepts</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="personality_disorders.html#personality-structure">Personality Structure</a></li>
+<li class="toctree-l4"><a class="reference internal" href="personality_disorders.html#diagnostic-considerations">Diagnostic Considerations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="personality_disorders.html#treatment-planning">Treatment Planning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="personality_disorders.html#research-implications">Research Implications</a></li>
+<li class="toctree-l3"><a class="reference internal" href="personality_disorders.html#future-directions">Future Directions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="personality_disorders.html#research-focus-areas">Research Focus Areas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="personality_disorders.html#implementation-goals">Implementation Goals</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="personality_disorders.html#literature-integration">Literature Integration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="personality_disorders.html#references-and-citations">References and Citations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ai_research.html">AI Research Literature</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ai_research.html#available-papers">Available Papers</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="textbooks.html">Psychology Textbooks</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="textbooks.html#core-textbooks">Core Textbooks</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="novels.html">Novels and Other Literature</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="novels.html#four-thousand-weeks">Four Thousand Weeks</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="psych_articles.html">Psychological Articles</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="psych_articles.html#mozart-music-and-white-noise-study">Mozart Music and White Noise Study</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="psych_disorders.html">Psychological Disorders Literature</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="psych_disorders.html#clinical-psychiatry-psychotic-disorders">Clinical Psychiatry - Psychotic Disorders</a></li>
+<li class="toctree-l3"><a class="reference internal" href="psych_disorders.html#textbook-of-personality-disorders">Textbook of Personality Disorders</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Research Proposals</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#neurological-research-proposal">Neurological Research Proposal</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#resource-categories">Resource Categories</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="index.html#psychological-articles-and-textbooks">Psychological Articles and Textbooks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#ai-research">AI Research</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#research-proposals">Research Proposals</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#psychological-disorders">Psychological Disorders</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#novels-and-other-literature">Novels and Other Literature</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#articles-and-studies">Articles and Studies</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../methodology/index.html">Research Methodology</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../methodology/index.html#research-design-overview">Research Design Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../methodology/index.html#data-collection-methods">Data Collection Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../methodology/index.html#analysis-methods">Analysis Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../methodology/index.html#ethical-considerations">Ethical Considerations</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../analysis/index.html">Data Analysis &amp; Results</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#statistical-analysis">Statistical Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#key-findings">Key Findings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#data-interpretation">Data Interpretation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis/index.html#research-implications">Research Implications</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API Documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../api/index.html#api-overview">API Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/index.html#authentication">Authentication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/index.html#api-endpoints">API Endpoints</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../api/index.html#questions-database">Questions Database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../api/index.html#analysis-tools">Analysis Tools</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../api/index.html#usage-examples">Usage Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/index.html">Additional Resources</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../resources/index.html#ascii-art">ASCII Art</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources/index.html#audio-files">Audio Files</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #2b2b2b" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">MVT Nexus</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Literature Resources</a></li>
+      <li class="breadcrumb-item active">Research Proposals</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/literature/research_proposals.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="research-proposals">
+<h1>Research Proposals<a class="headerlink" href="#research-proposals" title="Link to this heading"></a></h1>
+<p>This section documents research proposals and related documentation.</p>
+<section id="neurological-research-proposal">
+<h2>Neurological Research Proposal<a class="headerlink" href="#neurological-research-proposal" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><strong>File</strong>: <code class="docutils literal notranslate"><span class="pre">literature-pdfs/neuro-proposal/3FCCEBE5-70D1-4546-B93B-57C813C74C48.pdf</span></code></p></li>
+<li><p><strong>Type</strong>: Research Proposal</p></li>
+<li><p><strong>Field</strong>: Neurology</p></li>
+<li><p><strong>Focus</strong>: Neurological research methodology and objectives</p></li>
+<li><p><strong>Key Areas</strong>:
+* Brain imaging techniques
+* Cognitive function assessment
+* Neurological disorder diagnosis</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="psych_disorders.html" class="btn btn-neutral float-left" title="Psychological Disorders Literature" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../methodology/index.html" class="btn btn-neutral float-right" title="Research Methodology" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

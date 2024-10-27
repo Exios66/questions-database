@@ -6,21 +6,22 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Data Format Specification &mdash; MVT Nexus Documentation 1.0 documentation</title>
+  <title>Question Database Format &mdash; MVT Nexus  documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
-      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=180c03a4" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=72df7183" />
 
   
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=f2a433a1"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
       <script src="../_static/doctools.js?v=9bcbadda"></script>
       <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/dark-mode.js?v=7b8d0bd9"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Literature Review" href="../literature/index.html" />
+    <link rel="next" title="Literature Resources" href="../literature/index.html" />
     <link rel="prev" title="Difficulty Levels" href="difficulty_levels.html" /> 
 </head>
 
@@ -28,12 +29,12 @@
   <div class="wy-grid-for-nav">
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
+        <div class="wy-side-nav-search"  style="background: #2b2b2b" >
 
           
           
           <a href="../index.html" class="icon icon-home">
-            MVT Nexus Documentation
+            MVT Nexus
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -101,78 +102,16 @@
 <li class="toctree-l3"><a class="reference internal" href="difficulty_levels.html#quality-assurance">Quality Assurance</a></li>
 </ul>
 </li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Data Format Specification</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#csv-format">CSV Format</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#file-format">File Format</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Question Database Format</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#available-question-files">Available Question Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#file-format">File Format</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#field-specifications">Field Specifications</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id">1. id</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#question">2. question</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#correct-answer">3. correct_answer</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#choice-1-choice-2-choice-3">4. choice_1, choice_2, choice_3</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#difficulty">5. difficulty</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#knowledge-category">6. Knowledge Category</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#topic-focus">7. Topic Focus</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#sample-csv-row">Sample CSV Row</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#data-validation-rules">Data Validation Rules</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#required-fields">Required Fields</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#uniqueness-constraints">Uniqueness Constraints</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#value-constraints">Value Constraints</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#format-validation">Format Validation</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#best-practices">Best Practices</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#data-entry">Data Entry</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#file-management">File Management</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#quality-control">Quality Control</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#tools-and-scripts">Tools and Scripts</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#error-handling">Error Handling</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#overview">Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#database-statistics">Database Statistics</a></li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#key-features">Key Features</a></li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#usage">Usage</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../literature/index.html">Literature Review</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../literature/personality_disorders.html">Personality Disorders Literature</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../literature/personality_disorders.html#core-text-analysis">Core Text Analysis</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../literature/personality_disorders.html#textbook-overview">Textbook Overview</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../literature/personality_disorders.html#key-topics-covered">Key Topics Covered</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../literature/personality_disorders.html#theoretical-foundations">1. Theoretical Foundations</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../literature/personality_disorders.html#diagnostic-framework">2. Diagnostic Framework</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../literature/personality_disorders.html#clinical-assessment">3. Clinical Assessment</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../literature/personality_disorders.html#treatment-approaches">4. Treatment Approaches</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../literature/personality_disorders.html#research-applications">Research Applications</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../literature/personality_disorders.html#assessment-integration">Assessment Integration</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../literature/personality_disorders.html#key-concepts">Key Concepts</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../literature/personality_disorders.html#personality-structure">Personality Structure</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../literature/personality_disorders.html#diagnostic-considerations">Diagnostic Considerations</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../literature/personality_disorders.html#treatment-planning">Treatment Planning</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../literature/personality_disorders.html#research-implications">Research Implications</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../literature/personality_disorders.html#future-directions">Future Directions</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../literature/personality_disorders.html#research-focus-areas">Research Focus Areas</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../literature/personality_disorders.html#implementation-goals">Implementation Goals</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../literature/personality_disorders.html#literature-integration">Literature Integration</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../literature/personality_disorders.html#references-and-citations">References and Citations</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../literature/index.html">Literature Resources</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../literature/clinical_psychiatry.html">Clinical Psychiatry Literature</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../literature/clinical_psychiatry.html#core-text-analysis">Core Text Analysis</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../literature/clinical_psychiatry.html#text-overview">Text Overview</a></li>
@@ -253,16 +192,72 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../literature/index.html#overview">Overview</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../literature/index.html#core-literature">Core Literature</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../literature/index.html#textbook-of-personality-disorders">Textbook of Personality Disorders</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../literature/index.html#clinical-psychiatry-psychotic-disorders">Clinical Psychiatry - Psychotic Disorders</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../literature/personality_disorders.html">Personality Disorders Literature</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../literature/personality_disorders.html#core-text-analysis">Core Text Analysis</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../literature/personality_disorders.html#textbook-overview">Textbook Overview</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../literature/index.html#research-applications">Research Applications</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../literature/index.html#literature-organization">Literature Organization</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../literature/index.html#usage-in-research">Usage in Research</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../literature/index.html#future-developments">Future Developments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../literature/personality_disorders.html#key-topics-covered">Key Topics Covered</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../literature/personality_disorders.html#theoretical-foundations">1. Theoretical Foundations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../literature/personality_disorders.html#diagnostic-framework">2. Diagnostic Framework</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../literature/personality_disorders.html#clinical-assessment">3. Clinical Assessment</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../literature/personality_disorders.html#treatment-approaches">4. Treatment Approaches</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../literature/personality_disorders.html#research-applications">Research Applications</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../literature/personality_disorders.html#assessment-integration">Assessment Integration</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../literature/personality_disorders.html#key-concepts">Key Concepts</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../literature/personality_disorders.html#personality-structure">Personality Structure</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../literature/personality_disorders.html#diagnostic-considerations">Diagnostic Considerations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../literature/personality_disorders.html#treatment-planning">Treatment Planning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../literature/personality_disorders.html#research-implications">Research Implications</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../literature/personality_disorders.html#future-directions">Future Directions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../literature/personality_disorders.html#research-focus-areas">Research Focus Areas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../literature/personality_disorders.html#implementation-goals">Implementation Goals</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../literature/personality_disorders.html#literature-integration">Literature Integration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../literature/personality_disorders.html#references-and-citations">References and Citations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../literature/ai_research.html">AI Research Literature</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../literature/ai_research.html#available-papers">Available Papers</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../literature/textbooks.html">Psychology Textbooks</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../literature/textbooks.html#core-textbooks">Core Textbooks</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../literature/novels.html">Novels and Other Literature</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../literature/novels.html#four-thousand-weeks">Four Thousand Weeks</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../literature/psych_articles.html">Psychological Articles</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../literature/psych_articles.html#mozart-music-and-white-noise-study">Mozart Music and White Noise Study</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../literature/psych_disorders.html">Psychological Disorders Literature</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../literature/psych_disorders.html#clinical-psychiatry-psychotic-disorders">Clinical Psychiatry - Psychotic Disorders</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../literature/psych_disorders.html#textbook-of-personality-disorders">Textbook of Personality Disorders</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../literature/research_proposals.html">Research Proposals</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../literature/research_proposals.html#neurological-research-proposal">Neurological Research Proposal</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../literature/index.html#resource-categories">Resource Categories</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../literature/index.html#psychological-articles-and-textbooks">Psychological Articles and Textbooks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../literature/index.html#ai-research">AI Research</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../literature/index.html#research-proposals">Research Proposals</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../literature/index.html#psychological-disorders">Psychological Disorders</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../literature/index.html#novels-and-other-literature">Novels and Other Literature</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../literature/index.html#articles-and-studies">Articles and Studies</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../methodology/index.html">Research Methodology</a><ul>
@@ -290,15 +285,20 @@
 <li class="toctree-l2"><a class="reference internal" href="../api/index.html#usage-examples">Usage Examples</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/index.html">Additional Resources</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../resources/index.html#ascii-art">ASCII Art</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources/index.html#audio-files">Audio Files</a></li>
+</ul>
+</li>
 </ul>
 
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #2b2b2b" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">MVT Nexus Documentation</a>
+          <a href="../index.html">MVT Nexus</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -307,7 +307,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="index.html">Question Database Documentation</a></li>
-      <li class="breadcrumb-item active">Data Format Specification</li>
+      <li class="breadcrumb-item active">Question Database Format</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/question_database/data_format.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -317,233 +317,32 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="data-format-specification">
-<h1>Data Format Specification<a class="headerlink" href="#data-format-specification" title="Link to this heading"></a></h1>
-<p>The MVT Nexus question database uses a standardized CSV (Comma-Separated Values) format for data storage and management. This document provides detailed specifications for the data format and field requirements.</p>
-<section id="csv-format">
-<h2>CSV Format<a class="headerlink" href="#csv-format" title="Link to this heading"></a></h2>
+  <section id="question-database-format">
+<h1>Question Database Format<a class="headerlink" href="#question-database-format" title="Link to this heading"></a></h1>
+<p>The question database consists of multiple CSV files organized by subject area:</p>
+<section id="available-question-files">
+<h2>Available Question Files<a class="headerlink" href="#available-question-files" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Astronomy_Questions.csv</span></code> - Questions related to astronomy and space science</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Geography_Questions.csv</span></code> - Geography-related questions</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Literature_Questions.csv</span></code> - Literature and reading comprehension questions</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Science_Questions.csv</span></code> - General science questions</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">General</span> <span class="pre">Knowledge_Questions.csv</span></code> - General knowledge questions</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Expanded_Questions_Full_Columns.csv</span></code> - Comprehensive question set with full metadata</p></li>
+</ul>
+</section>
 <section id="file-format">
-<h3>File Format<a class="headerlink" href="#file-format" title="Link to this heading"></a></h3>
+<h2>File Format<a class="headerlink" href="#file-format" title="Link to this heading"></a></h2>
+<p>Each CSV file follows a standardized format with columns for:</p>
 <ul class="simple">
-<li><p>Encoding: UTF-8</p></li>
-<li><p>Delimiter: Comma (,)</p></li>
-<li><p>Quote Character: Double quote (“)</p></li>
-<li><p>Line Ending: Unix-style (\n)</p></li>
-<li><p>Header Row: Required</p></li>
-<li><p>File Extension: .csv</p></li>
+<li><p>Question text</p></li>
+<li><p>Answer options</p></li>
+<li><p>Correct answer</p></li>
+<li><p>Difficulty level</p></li>
+<li><p>Category/subject area</p></li>
+<li><p>Additional metadata as needed</p></li>
 </ul>
-</section>
-</section>
-<section id="field-specifications">
-<h2>Field Specifications<a class="headerlink" href="#field-specifications" title="Link to this heading"></a></h2>
-<section id="id">
-<h3>1. id<a class="headerlink" href="#id" title="Link to this heading"></a></h3>
-<ul class="simple">
-<li><p>Type: Integer</p></li>
-<li><p>Format: Sequential number</p></li>
-<li><p>Required: Yes</p></li>
-<li><p>Unique: Yes</p></li>
-<li><p>Example: “1”, “2”, “3”</p></li>
-</ul>
-</section>
-<section id="question">
-<h3>2. question<a class="headerlink" href="#question" title="Link to this heading"></a></h3>
-<ul class="simple">
-<li><p>Type: String</p></li>
-<li><p>Format: Complete sentence ending with question mark</p></li>
-<li><p>Required: Yes</p></li>
-<li><p>Max Length: 255 characters</p></li>
-<li><p>Example: “What is the capital of France?”</p></li>
-</ul>
-</section>
-<section id="correct-answer">
-<h3>3. correct_answer<a class="headerlink" href="#correct-answer" title="Link to this heading"></a></h3>
-<ul class="simple">
-<li><p>Type: String</p></li>
-<li><p>Format: Precise answer text</p></li>
-<li><p>Required: Yes</p></li>
-<li><p>Max Length: 100 characters</p></li>
-<li><p>Example: “Paris”</p></li>
-</ul>
-</section>
-<section id="choice-1-choice-2-choice-3">
-<h3>4. choice_1, choice_2, choice_3<a class="headerlink" href="#choice-1-choice-2-choice-3" title="Link to this heading"></a></h3>
-<ul class="simple">
-<li><p>Type: String</p></li>
-<li><p>Format: Alternative answer options</p></li>
-<li><p>Required: Yes</p></li>
-<li><p>Max Length: 100 characters each</p></li>
-<li><p>Example: “London”, “Berlin”, “Madrid”</p></li>
-</ul>
-</section>
-<section id="difficulty">
-<h3>5. difficulty<a class="headerlink" href="#difficulty" title="Link to this heading"></a></h3>
-<ul class="simple">
-<li><p>Type: Integer</p></li>
-<li><p>Format: 0, 1, or 2</p></li>
-<li><p>Required: Yes</p></li>
-<li><dl class="simple">
-<dt>Valid Values:</dt><dd><ul>
-<li><p>0: Basic</p></li>
-<li><p>1: Intermediate</p></li>
-<li><p>2: Advanced</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-</ul>
-</section>
-<section id="knowledge-category">
-<h3>6. Knowledge Category<a class="headerlink" href="#knowledge-category" title="Link to this heading"></a></h3>
-<ul class="simple">
-<li><p>Type: String</p></li>
-<li><p>Format: Main category name</p></li>
-<li><p>Required: Yes</p></li>
-<li><dl class="simple">
-<dt>Valid Values:</dt><dd><ul>
-<li><p>“Astronomy”</p></li>
-<li><p>“Geography”</p></li>
-<li><p>“Literature”</p></li>
-<li><p>“Mathematics”</p></li>
-<li><p>“Science”</p></li>
-<li><p>“General Knowledge”</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-</ul>
-</section>
-<section id="topic-focus">
-<h3>7. Topic Focus<a class="headerlink" href="#topic-focus" title="Link to this heading"></a></h3>
-<ul class="simple">
-<li><p>Type: String</p></li>
-<li><p>Format: Specific topic within category</p></li>
-<li><p>Required: Yes</p></li>
-<li><p>Example: “Capital Cities”, “Authors &amp; Literature”</p></li>
-</ul>
-</section>
-</section>
-<section id="sample-csv-row">
-<h2>Sample CSV Row<a class="headerlink" href="#sample-csv-row" title="Link to this heading"></a></h2>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>id,question,correct_answer,choice_1,choice_2,choice_3,difficulty,Knowledge Category,Topic Focus
-1,&quot;What is the capital of France?&quot;,&quot;Paris&quot;,&quot;London&quot;,&quot;Berlin&quot;,&quot;Madrid&quot;,0,&quot;Geography&quot;,&quot;Capital Cities&quot;
-</pre></div>
-</div>
-</section>
-<section id="data-validation-rules">
-<h2>Data Validation Rules<a class="headerlink" href="#data-validation-rules" title="Link to this heading"></a></h2>
-<section id="required-fields">
-<h3>Required Fields<a class="headerlink" href="#required-fields" title="Link to this heading"></a></h3>
-<p>All fields are required and must not be empty.</p>
-</section>
-<section id="uniqueness-constraints">
-<h3>Uniqueness Constraints<a class="headerlink" href="#uniqueness-constraints" title="Link to this heading"></a></h3>
-<ul class="simple">
-<li><p>id must be unique across the entire database</p></li>
-<li><p>question text should be unique</p></li>
-<li><p>correct_answer and choices must be different within each question</p></li>
-</ul>
-</section>
-<section id="value-constraints">
-<h3>Value Constraints<a class="headerlink" href="#value-constraints" title="Link to this heading"></a></h3>
-<ol class="arabic simple">
-<li><p>difficulty must be 0, 1, or 2</p></li>
-<li><p>Knowledge Category must match defined categories</p></li>
-<li><p>Topic Focus must be relevant to the Knowledge Category</p></li>
-</ol>
-</section>
-<section id="format-validation">
-<h3>Format Validation<a class="headerlink" href="#format-validation" title="Link to this heading"></a></h3>
-<ol class="arabic simple">
-<li><p>question must end with a question mark</p></li>
-<li><p>No trailing/leading whitespace in any field</p></li>
-<li><p>No empty or NULL values allowed</p></li>
-<li><p>Proper capitalization in all text fields</p></li>
-</ol>
-</section>
-</section>
-<section id="best-practices">
-<h2>Best Practices<a class="headerlink" href="#best-practices" title="Link to this heading"></a></h2>
-<section id="data-entry">
-<h3>Data Entry<a class="headerlink" href="#data-entry" title="Link to this heading"></a></h3>
-<ol class="arabic simple">
-<li><p>Maintain consistent capitalization</p></li>
-<li><p>Use clear, concise language</p></li>
-<li><p>Verify all answers before entry</p></li>
-<li><p>Check for duplicate questions</p></li>
-<li><p>Ensure logical answer choices</p></li>
-</ol>
-</section>
-<section id="file-management">
-<h3>File Management<a class="headerlink" href="#file-management" title="Link to this heading"></a></h3>
-<ol class="arabic simple">
-<li><p>Regular backups</p></li>
-<li><p>Version control</p></li>
-<li><p>Validation before import</p></li>
-<li><p>Regular format compliance checks</p></li>
-<li><p>Automated error checking</p></li>
-</ol>
-</section>
-<section id="quality-control">
-<h3>Quality Control<a class="headerlink" href="#quality-control" title="Link to this heading"></a></h3>
-<ol class="arabic simple">
-<li><p>Peer review of new entries</p></li>
-<li><p>Regular data audits</p></li>
-<li><p>Automated format validation</p></li>
-<li><p>Category consistency checks</p></li>
-<li><p>Difficulty level verification</p></li>
-</ol>
-</section>
-</section>
-<section id="tools-and-scripts">
-<h2>Tools and Scripts<a class="headerlink" href="#tools-and-scripts" title="Link to this heading"></a></h2>
-<p>Common tools for working with the database:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-
-<span class="c1"># Read CSV file</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;questions.csv&#39;</span><span class="p">)</span>
-
-<span class="c1"># Basic validation</span>
-<span class="k">assert</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;difficulty&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
-<span class="k">assert</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">is_unique</span>
-
-<span class="c1"># Check for required fields</span>
-<span class="k">assert</span> <span class="ow">not</span> <span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">any</span><span class="p">()</span><span class="o">.</span><span class="n">any</span><span class="p">()</span>
-</pre></div>
-</div>
-</section>
-<section id="error-handling">
-<h2>Error Handling<a class="headerlink" href="#error-handling" title="Link to this heading"></a></h2>
-<p>Common error types and resolution:</p>
-<ol class="arabic simple">
-<li><dl class="simple">
-<dt>Format Errors</dt><dd><ul class="simple">
-<li><p>Invalid CSV formatting</p></li>
-<li><p>Missing fields</p></li>
-<li><p>Incorrect delimiters</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>Data Errors</dt><dd><ul class="simple">
-<li><p>Duplicate IDs</p></li>
-<li><p>Invalid difficulty levels</p></li>
-<li><p>Inconsistent categories</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>Content Errors</dt><dd><ul class="simple">
-<li><p>Duplicate questions</p></li>
-<li><p>Invalid answer choices</p></li>
-<li><p>Incorrect categorization</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-</ol>
+<p>The <code class="docutils literal notranslate"><span class="pre">Expanded_Questions_Full_Columns.csv</span></code> file contains additional columns for enhanced metadata and analysis purposes.</p>
 </section>
 </section>
 
@@ -552,13 +351,13 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="difficulty_levels.html" class="btn btn-neutral float-left" title="Difficulty Levels" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../literature/index.html" class="btn btn-neutral float-right" title="Literature Review" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../literature/index.html" class="btn btn-neutral float-right" title="Literature Resources" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2024, Jook Burleson.</p>
+    <p>&#169; Copyright 2024.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

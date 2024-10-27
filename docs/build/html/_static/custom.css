@@ -1,63 +1,125 @@
-/* Custom styles for MVT Nexus Documentation */
-
-/* Enhance readability */
-.wy-nav-content {
-    max-width: 900px;
-    padding: 2em;
+/* Light mode styles */
+:root {
+    --background-color: #ffffff;
+    --text-color: #2b2b2b;
+    --link-color: #2980b9;
+    --hover-color: #3091d1;
+    --nav-background: #f3f3f3;
+    --code-background: #f8f8f8;
 }
 
-/* Improve code block styling */
-.highlight {
-    background: #f8f8f8;
-    border-radius: 4px;
+/* Dark mode styles */
+[data-theme="dark"] {
+    --background-color: #1a1a1a;
+    --text-color: #e6e6e6;
+    --link-color: #5aa1e8;
+    --hover-color: #7ab8f5;
+    --nav-background: #2b2b2b;
+    --code-background: #2d2d2d;
 }
 
-/* Better heading hierarchy */
-h1 {
-    color: #2c3e50;
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 0.3em;
+/* Base styles */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    line-height: 1.6;
 }
 
-h2 {
-    color: #34495e;
-    border-bottom: 1px solid #bdc3c7;
-    padding-bottom: 0.2em;
+/* Navigation */
+.wy-nav-side {
+    background-color: var(--nav-background);
 }
 
-/* Enhance note boxes */
-.note {
-    background: #e8f4f8;
-    border-left: 4px solid #3498db;
-}
-
-/* Improve table styling */
-table.docutils {
-    border: 1px solid #e1e4e5;
-    border-collapse: collapse;
-    margin-bottom: 24px;
-}
-
-table.docutils td, table.docutils th {
-    padding: 8px;
-    border: 1px solid #e1e4e5;
-}
-
-/* Better navigation styling */
-.wy-menu-vertical li.current {
-    background: #e3e8ee;
-}
-
-.wy-menu-vertical li.current > a {
-    color: #2c3e50;
-}
-
-/* Improve search box */
 .wy-side-nav-search {
-    background-color: #2c3e50;
+    background-color: var(--nav-background);
 }
 
+.wy-menu-vertical li.current {
+    background-color: var(--background-color);
+}
+
+/* Links */
+a {
+    color: var(--link-color);
+}
+
+a:hover {
+    color: var(--hover-color);
+}
+
+/* Code blocks */
+.highlight {
+    background-color: var(--code-background);
+}
+
+/* Dark mode toggle */
+.dark-mode-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: var(--nav-background);
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dark-mode-toggle:hover {
+    opacity: 0.8;
+}
+
+/* Modern touches */
+.rst-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.rst-content .section h1,
+.rst-content .section h2,
+.rst-content .section h3 {
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Cards for content */
+.rst-content .section {
+    background-color: var(--background-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+
+/* Tables */
+.rst-content table.docutils {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.rst-content table.docutils thead th {
+    background-color: var(--nav-background);
+    color: var(--text-color);
+}
+
+/* Admonitions */
+.rst-content .admonition {
+    border-radius: 8px;
+    border-left-width: 6px;
+}
+
+/* Search box */
 .wy-side-nav-search input[type="text"] {
-    border-radius: 4px;
-    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--link-color);
 }
